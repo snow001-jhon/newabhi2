@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zero to Hero</title>
-    <!-- Font Awesome for clean layout icons -->
+    <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cloudflare.com">
     <style>
         * {
@@ -23,41 +23,35 @@
             padding: 20px;
         }
 
-        /* Container Card */
+        /* Container Card Setup */
         .card {
             background: #ffffff;
             width: 100%;
-            max-width: 450px; /* Ensures perfect view on all mobile devices */
+            max-width: 450px; /* Universally compatible with all smartphones */
             border-radius: 30px;
-            padding: 30px 20px 20px 20px;
+            padding: 25px 20px 20px 20px;
             text-align: center;
             box-shadow: 0 10px 30px rgba(0,0,0,0.3);
         }
 
-        /* Logo Area Styles */
-        .logo-area {
-            width: 90px;
-            height: 90px;
-            background: #111e3d;
-            border-radius: 50%;
-            margin: 0 auto 15px auto;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            color: #ffffff;
-            padding: 10px;
-            overflow: hidden;
-        }
-
-        .logo-area img {
+        /* Profile Image Container Layout */
+        .profile-image-container {
             width: 100%;
-            height: 100%;
-            object-fit: contain;
-            border-radius: 50%;
+            max-width: 180px; /* Adjust this width to change image size on screen */
+            margin: 0 auto 20px auto;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
 
-        /* Typography */
+        .profile-image-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+        }
+
+        /* Typography & Headings */
         .main-title {
             color: #5856d6;
             font-size: 28px;
@@ -84,7 +78,7 @@
         .stats-item.members { color: #2ecc71; font-weight: 600; }
         .stats-item.signals { color: #3498db; font-weight: 600; }
 
-        /* Telegram Action Button */
+        /* Telegram Call to Action Button */
         .tg-btn {
             display: flex;
             align-items: center;
@@ -106,7 +100,7 @@
             transform: scale(0.98);
         }
 
-        /* Features List Layout */
+        /* Features List Viewports */
         .features-list {
             display: flex;
             flex-direction: column;
@@ -145,7 +139,7 @@
             line-height: 1.4;
         }
 
-        /* Banner styles */
+        /* Banner Style Configuration */
         .free-banner {
             background: #f0edff;
             border: 1px dashed #c0b3ff;
@@ -160,7 +154,7 @@
             color: #d63031;
         }
 
-        /* Footer / Snow Ads Agency Styles */
+        /* Footer Sponsor Links */
         .footer-ad {
             font-size: 12px;
             color: #888;
@@ -178,22 +172,20 @@
     <div class="card">
         
         <!-- ========================================================
-             1. EDIT LOGO / IMAGE HERE
-             To change the logo image, uncomment the <img> tag below 
-             and replace "your-logo-file.png" with your actual image path.
+             1. EDIT PROFILE IMAGE HERE
+             Replace "profile-pic.jpg" below with your own image file name or web path URL.
              ======================================================== -->
-        <div class="logo-area">
-             <img src="logo.png" alt="Logo">
-        <div style="font-size: 10px; font-weight: bold; text-align: center; line-height: 1.2;"></div>
-        </div> 
+        <div class="profile-image-container">
+            <img src="profile-pic.jpg" alt="Profile Display">
+        </div>
 
         <!-- ========================================================
              2. EDIT MAIN NAME HERE
-             Change "Zero to Hero" to your desired brand title.
+             Change "Zero to Hero" to your desired brand title string.
              ======================================================== -->
         <h1 class="main-title">Zero to Hero</h1>
 
-        <!-- Channel Stats Configuration -->
+        <!-- Subheading Stats Config -->
         <div class="stats-line">
             <div class="stats-item members">
                 <i class="fa-solid fa-users"></i> 45,031+ Active Members
@@ -206,14 +198,14 @@
 
         <!-- ========================================================
              3. EDIT TELEGRAM LINK HERE
-             Replace the "#" inside href="#" with your real Telegram URL 
+             Replace the "#" inside href="#" with your direct Telegram channel URL link.
              Example: href="https://t.me"
              ======================================================== -->
         <a href="#" class="tg-btn">
             <i class="fa-brands fa-telegram"></i> Join Telegram Channel 🚀
         </a>
 
-        <!-- Feature Points -->
+        <!-- Feature Layout Blocks -->
         <div class="features-list">
             
             <div class="feature-item">
@@ -238,15 +230,15 @@
 
         </div>
 
-        <!-- Highlights Banner -->
+        <!-- Conversion Offer Stripe -->
         <div class="free-banner">
             🎯 <strong>100% Free</strong> • Daily accurate signals • No hidden charges
         </div>
 
         <!-- ========================================================
              4. EDIT SNOW ADS AGENCY LINK HERE
-             Replace the first "#" with your Agency link.
-             Replace the second "#" with your ad setup form link.
+             Replace the first "#" link with your custom agency homepage URL.
+             Replace the second "#" link with your ad generation/contact form URL.
              ======================================================== -->
         <div class="footer-ad">
             📢 Ad by <a href="#">Snow Ads Agency</a> • <a href="#">Setup your ad →</a>
