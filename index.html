@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zero to Hero</title>
-    <!-- Font Awesome Icons -->
+    <!-- Font Awesome Icons for professional visuals -->
     <link rel="stylesheet" href="https://cloudflare.com">
     <style>
         * {
@@ -23,49 +23,53 @@
             padding: 20px;
         }
 
-        /* Container Card Setup */
+        /* Main Container Card - Matches your screenshot layout exactly */
         .card {
             background: #ffffff;
             width: 100%;
-            max-width: 450px; /* Universally compatible with all smartphones */
+            max-width: 430px; /* Perfect, premium sizing for all mobile viewports */
             border-radius: 30px;
-            padding: 25px 20px 20px 20px;
+            padding: 25px 20px;
             text-align: center;
             box-shadow: 0 10px 30px rgba(0,0,0,0.3);
         }
 
-        /* Profile Image Container Layout */
-        .profile-image-container {
-            width: 100%;
-            max-width: 180px; /* Adjust this width to change image size on screen */
-            margin: 0 auto 20px auto;
-            border-radius: 15px;
+        /* 1. Profile Round Image Container (Compact & Sharp) */
+        .profile-round-container {
+            width: 85px; /* Attractive, optimal circle size matching the original asset */
+            height: 85px;
+            margin: 5px auto 15px auto;
+            border-radius: 50%;
             overflow: hidden;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            background: #111e3d; /* Fallback dark background */
         }
 
-        .profile-image-container img {
+        .profile-round-container img {
             width: 100%;
-            height: auto;
-            display: block;
-            object-fit: cover;
+            height: 100%;
+            object-fit: cover; /* Keeps the profile image crisp and perfectly centered */
         }
 
-        /* Typography & Headings */
+        /* Typography & Header styling */
         .main-title {
             color: #5856d6;
-            font-size: 28px;
+            font-size: 26px;
             font-weight: 700;
-            margin-bottom: 10px;
+            margin-bottom: 8px;
         }
 
         .stats-line {
             display: flex;
             justify-content: center;
-            gap: 15px;
-            font-size: 14px;
+            align-items: center;
+            gap: 12px;
+            font-size: 13px;
             color: #666;
-            margin-bottom: 25px;
+            margin-bottom: 22px;
             flex-wrap: wrap;
         }
 
@@ -78,7 +82,7 @@
         .stats-item.members { color: #2ecc71; font-weight: 600; }
         .stats-item.signals { color: #3498db; font-weight: 600; }
 
-        /* Telegram Call to Action Button */
+        /* Telegram Direct Action Button */
         .tg-btn {
             display: flex;
             align-items: center;
@@ -87,20 +91,20 @@
             background: linear-gradient(135deg, #5b62f4, #8340f1);
             color: white;
             text-decoration: none;
-            padding: 16px;
+            padding: 15px;
             border-radius: 15px;
-            font-size: 18px;
+            font-size: 17px;
             font-weight: 600;
             margin-bottom: 20px;
-            box-shadow: 0 4px 15px rgba(91, 98, 244, 0.4);
+            box-shadow: 0 4px 15px rgba(91, 98, 244, 0.35);
             transition: transform 0.2s;
         }
 
         .tg-btn:active {
-            transform: scale(0.98);
+            transform: scale(0.97);
         }
 
-        /* Features List Viewports */
+        /* Features List block spacing */
         .features-list {
             display: flex;
             flex-direction: column;
@@ -120,15 +124,15 @@
         }
 
         .feature-icon {
-            width: 35px;
-            height: 35px;
+            width: 34px;
+            height: 34px;
             background: #eceaff;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
             color: #5856d6;
-            font-size: 16px;
+            font-size: 15px;
             flex-shrink: 0;
         }
 
@@ -139,7 +143,7 @@
             line-height: 1.4;
         }
 
-        /* Banner Style Configuration */
+        /* Banner styling */
         .free-banner {
             background: #f0edff;
             border: 1px dashed #c0b3ff;
@@ -154,7 +158,7 @@
             color: #d63031;
         }
 
-        /* Footer Sponsor Links */
+        /* Footer Sponsor Section */
         .footer-ad {
             font-size: 12px;
             color: #888;
@@ -172,20 +176,21 @@
     <div class="card">
         
         <!-- ========================================================
-             1. EDIT PROFILE IMAGE HERE
-             Replace "profile-pic.jpg" below with your own image file name or web path URL.
+             1. EDIT IMAGE HERE
+             This is your round profile area using 'logo.png'.
+             Change "logo.png" to your file pathway if needed.
              ======================================================== -->
-        <div class="profile-image-container">
-            <img src="logo.png" alt="Profile Display">
+        <div class="profile-round-container">
+            <img src="logo.png" alt="Profile Image">
         </div>
 
         <!-- ========================================================
              2. EDIT MAIN NAME HERE
-             Change "Zero to Hero" to your desired brand title string.
+             Replace "Zero to Hero" with your custom channel/brand name.
              ======================================================== -->
         <h1 class="main-title">Zero to Hero</h1>
 
-        <!-- Subheading Stats Config -->
+        <!-- Configuration for counts -->
         <div class="stats-line">
             <div class="stats-item members">
                 <i class="fa-solid fa-users"></i> 45,031+ Active Members
@@ -198,14 +203,14 @@
 
         <!-- ========================================================
              3. EDIT TELEGRAM LINK HERE
-             Replace the "#" inside href="#" with your direct Telegram channel URL link.
+             Replace "#" with your valid Telegram community channel link.
              Example: href="https://t.me"
              ======================================================== -->
         <a href="#" class="tg-btn">
             <i class="fa-brands fa-telegram"></i> Join Telegram Channel 🚀
         </a>
 
-        <!-- Feature Layout Blocks -->
+        <!-- Feature Layout List -->
         <div class="features-list">
             
             <div class="feature-item">
@@ -230,15 +235,15 @@
 
         </div>
 
-        <!-- Conversion Offer Stripe -->
+        <!-- Pricing Highlight Overlay -->
         <div class="free-banner">
             🎯 <strong>100% Free</strong> • Daily accurate signals • No hidden charges
         </div>
 
         <!-- ========================================================
              4. EDIT SNOW ADS AGENCY LINK HERE
-             Replace the first "#" link with your custom agency homepage URL.
-             Replace the second "#" link with your ad generation/contact form URL.
+             Replace the first "#" link with your Agency landing url.
+             Replace the second "#" link with your setup/contact url.
              ======================================================== -->
         <div class="footer-ad">
             📢 Ad by <a href="#">Snow Ads Agency</a> • <a href="#">Setup your ad →</a>
